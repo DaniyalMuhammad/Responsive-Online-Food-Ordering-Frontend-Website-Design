@@ -36,9 +36,15 @@ The About Us page provides detailed information about the company, its mission, 
 
 ![Screenshot (152)](https://github.com/DaniyalMuhammad/Responsive-Online-Food-Ordering-Website/assets/110384957/1d5fa790-197c-4847-939e-e27fbce3013c)
 
-# 7) Responsive Design: 
+# 7) Team Members: 
+The website showcases information about team members, including their names,  areas of expertise, and contact details.
+
+![Screenshot (160)](https://github.com/DaniyalMuhammad/Responsive-Online-Food-Ordering-Website/assets/110384957/9ddd3c13-b0be-468c-a6c7-69b806587d0c)
+
+# 8) Responsive Design: 
 The website is designed to adapt to different screen sizes and devices. Whether accessed on a desktop, laptop, tablet, or smartphone, the website provides an optimal viewing experience for users.
 
+![Screenshot (161)](https://github.com/DaniyalMuhammad/Responsive-Online-Food-Ordering-Website/assets/110384957/21010fc4-d081-4034-95d3-fb0ad66ccd24)
 
 # Technologies Used
 The website utilizes the following technologies:
