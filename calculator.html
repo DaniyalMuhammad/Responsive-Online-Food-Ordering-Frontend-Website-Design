@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function(){
+    var input = $('#ib');
+    
+    $('.value').click(function(){
+        input.val(input.val() + $(this).text());
+    });
+
+    $('.op').click(function(){
+    var op = $(this).text().trim();
+    if (op === '^') 
+    {
+        op = '**';  // use the ** operator for power
+    }
+     else if (op === '√') {
+        op = '√';  // use the Math.sqrt() function for square root
+    }
+    input.val(input.val() + ' ' + op + ' ');
+});
+    
+    $('#equalbtn').click(function(){
+        input.val(eval(input.val()));
+    });
+    
+    $('button:contains("AC")').click(function(){
+        input.val('');
+    });
+    
+    $('button:contains("DEL")').click(function(){
+        input.val(input.val().slice(0, -1));
+    });
+});
+
+    </script>
+    <title>Calculator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" placeholder="0" id="ib">
+        <div>
+            <button>AC</button>
+            <button class="op">√ </button>
+            <button class="op">^</button>
+            <button class="op">/</button>
+        </div>
+        <div>
+            <button class="value">7</button>
+            <button class="value">8</button>
+            <button class="value">9</button>
+            <button class="op">*</button>
+        </div>
+        <div>
+            <button class="value">4</button>
+            <button class="value">5</button>
+            <button class="value">6</button>
+            <button class="op">-</button>
+        </div>
+        <div>
+            <button class="value">1</button>
+            <button class="value">2</button>
+            <button class="value">3</button>
+            <button class="op">+</button>
+        </div>
+        <div>
+            <button class="value">0</button>
+            <button class="value">.</button>
+            <button>DEL</button>
+            <button id="equalbtn" >=</button>
+        </div>
+    </div>
+</body>
+</html>
